@@ -4,13 +4,15 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Worklenz Web Automation",
-    desc: "End-to-end automation suite for the Worklenz web application — covering critical user flows, regressions, and UI validation.",
-    tags: ["Playwright", "JavaScript", "Automation"],
-    accent: "from-purple-500/30 to-blue-500/30",
-  },
+  title: "Omi Game Appium Automation",
+  repo: "https://github.com/samadhii99/omi-game-appium-automation", 
+  desc: "Mobile automation framework for the Omi Game Android app — built with Appium, WebdriverIO & TypeScript, with Allure reporting integration.",
+  tags: ["Appium", "WebdriverIO", "TypeScript", "Mocha"],
+  accent: "from-purple-500/30 to-blue-500/30",
+},
   {
     title: "Worklenz Mobile Automation",
+    repo: "https://github.com/samadhii99/mobile-automation-maestro",
     desc: "Mobile automation tests for the Worklenz Android app built with Maestro Studio — flow-based scripting and CI-ready runs.",
     tags: ["Maestro Studio", "Mobile", "Android"],
     accent: "from-blue-500/30 to-cyan-500/30",
@@ -22,9 +24,10 @@ const projects = [
     accent: "from-fuchsia-500/30 to-purple-500/30",
   },
   {
-    title: "E-Commerce Gift Store",
-    desc: "Responsive gift store web application with clean UI and dynamic product browsing — built from scratch with vanilla web tech.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    title: "E-Commerce Store",
+    repo: "https://github.com/samadhii99/Shopping-Store",
+    desc: "Multi-language e-commerce app with AI chatbot, Google reCAPTCHA auth, and dark/light mode — built with React & Vite.",
+    tags: ["React", "Vite", "Redux", "i18next"],
     accent: "from-sky-500/30 to-indigo-500/30",
   },
 ];
@@ -77,7 +80,7 @@ export function Projects() {
 
             <div className="mt-5 flex gap-2">
               <a
-                href="https://github.com/"
+                href={p.repo}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-lg border border-border px-3 py-2 text-xs hover:bg-secondary/60 transition"
